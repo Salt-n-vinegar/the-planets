@@ -1,13 +1,24 @@
 const planetsSource = './planets-folder/planets.json';
 
+function pageLoadAnimate() {
+    const planetImage = document.querySelectorAll('.planet-image');
+    planetImage.forEach((items) => {
+        items.classList.add('planet-grow');
+    })
+}
+
 window.addEventListener('DOMContentLoaded', async () => {
+
     try {
         const response = await fetch(planetsSource);
         const data = await response.json();
         display(data);
+
     } catch (error) {
         console.log(`Unexpected error`);
     }
+
+    pageLoadAnimate();
 })
 
 const display = (items) => {
@@ -39,9 +50,6 @@ planetContainer.forEach(function(planet, index) {
 
 let counter = 0;
 
-window.addEventListener('load', () => {
-    pageLoadAnimate()
-})
 
 nextBtn.forEach(function(btn) {
     btn.addEventListener('click', () => {
@@ -73,17 +81,7 @@ function carousel() {
     planetContainer.forEach(function(planet) {
         planet.style.transform = `translateX(-${counter * 100}%)`
     }) 
-}
-
-}
-
-function pageLoadAnimate() {
-    const planetImage = document.querySelectorAll('.planet-image');
-    planetImage.forEach((items) => {
-        items.classList.add('planet-grow');
-    })
-}
-
+}}
 
 function imageAnimate() {
     const planetImage = document.querySelectorAll('.planet-image');
