@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@500;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: rgb(16, 23, 41);
+    font-family: Edu SA Beginner;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    overflow: clip;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+.planet-name {
+    font-size: 3rem;
+    color: dodgerblue;
+    position: relative;
+}
+
+
+.nav-buttons-align {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    z-index: 100;
+}
+
+.navigation-buttons {
+    width: 95%;
+    display: flex;
+    /* background: pink; */
+    justify-content: space-between;
+    margin: auto;
+}
+
+@keyframes arrowRight {
+    0% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(5px);
+    }
+}
+
+@keyframes arrowLeft {
+    0% {
+        transform: translateX(5px);
+    }
+
+    100% {
+        transform: translateX(-5px);
+    }
+}
+
+.navigation-buttons > button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 2rem;
+}
+
+.navigation-buttons > button:nth-child(1) {
+    animation: arrowLeft 1s linear infinite alternate-reverse;
+
+}
+
+.navigation-buttons > button:nth-child(2) {
+    animation: arrowRight 1s linear infinite alternate-reverse;
+
+}
+
+.the-planets {
+    position: relative;
+    overflow: clip;
+
+    min-height: calc(100vh - 86px);
+}
+
+.planet {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    min-height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+}
+
+@keyframes planetRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+     100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes planetRotateReverse {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+     100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes planetGrow {
+
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(105%);
+    }
+}
+
+
+.planet-animate {
+    animation-name: planetRotate;
+    animation-direction: normal;
+    animation-delay: 100ms;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+.planet-animate-reverse {
+    animation-name: planetRotateReverse;
+    animation-direction: normal;
+    animation-delay: 100ms;
+    animation-duration: 1000ms;
+    animation-iteration-count: 1;
+}
+
+.planet-grow {
+    animation-name: planetGrow;
+    animation-direction: alternate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+
+.planets-header {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    margin-top: 2rem;
+    line-height: 70%;
+}
+
+#planets-header-break {
+    font-size: 1.5rem;
+}
+
+.planet-quote {
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-inline: 2rem;
+    max-width: 25rem;
+    margin-top: -2rem;
+}
+
+.sun {
+    color: rgb(251, 181, 34);
+}
+
+.mercury {
+    color: rgb(184, 121, 52);
+}
+
+.venus {
+    color: rgb(254, 186, 63);
+}
+
+.earth {
+    color: rgb(20, 191, 219)
+}
+
+.mars {
+    color: rgb(242, 97, 50)
+}
+
+.jupiter {
+    color: rgb(247, 135, 27);
+}
+
+.saturn {
+    color: rgb(254, 175, 57)
+}
+
+.uranus {
+    color: rgb(50, 182, 204);
+
+}
+
+.neptune {
+    color: rgb(62, 153, 206);
+}
+
+.pluto {
+    color: rgb(196, 197, 201);
+}
+
+.final-message {
+    color: white;
+}
+
+@media (width > 500px) {
+    .planet-quote {
+        max-width: 40rem;
+    }
+}

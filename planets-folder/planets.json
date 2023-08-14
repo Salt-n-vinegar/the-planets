@@ -1,0 +1,15 @@
+[
+    {"name": "Sun", "quote": "I'm actually a star but the gang asked me to be here", "imgSrc": "../images/Sun.svg", "planetColor": "sun"},
+    {"name": "Mercury", "quote": "First", "imgSrc": "../images/Mercury.png", "planetColor": "mercury"},
+    {"name": "Venus", "quote": "I'm hot and I know it", "imgSrc": "../images/Venus.png", "planetColor": "venus"},
+    {"name": "Earth", "quote": "Some call me 'Earth'.  My name is actually Garth", "imgSrc": "../images/Earth.png", "planetColor": "earth"},
+    {"name": "Mars", "quote": "Hey, aren't you guys coming over?  What's taking so long?", "imgSrc": "../images/Mars.png", "planetColor": "mars"},
+    {"name": "Jupiter", "quote": "The key to gaining mass?  Protein and sleep", "imgSrc": "../images/Jupiter.png", "planetColor": "jupiter"},
+    {"name": "Saturn", "quote": "Let me spin some of these disks real quick.  Remix!", "imgSrc": "../images/Saturn.png", "planetColor": "saturn"},
+    {"name": "Uranus", "quote":"I lean AND I have rings!","imgSrc": "../images/Uranus.png", "planetColor": "uranus"},
+    {"name": "Neptune", "quote":"Zzzzzzzzzzz....", "imgSrc": "../images/Neptune.png", "planetColor": "neptune"},
+    {"name": "Pluto", "quote":"Hey guys!  Don't forget about me!", "imgSrc": "../images/pluto.png", "planetColor": "pluto"},
+    {"name": "The end", "quote":"Contact me at chrislwebdev@gmail.com <br> to tell me Pluto isn't a planet", "imgSrc": "../images/pluto.png", "planetColor": "pluto"}
+
+]
+
